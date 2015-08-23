@@ -48,7 +48,6 @@ PRODUCT_COPY_FILES += \
     device/wiko/darkmoon/rootdir/root/init.rc:root/init.rc \
     device/wiko/darkmoon/rootdir/root/init.mt6582.rc:root/init.mt6582.rc \
     device/wiko/darkmoon/rootdir/root/init.project.rc:root/init.project.rc \
-    device/wiko/darkmoon/rootdir/root/factory_init.rc:root/factory_init.rc \
     device/wiko/darkmoon/rootdir/root/init.fuse.rc:root/init.fuse.rc \
     device/wiko/darkmoon/rootdir/root/init.modem.rc:root/init.modem.rc \
     device/wiko/darkmoon/rootdir/root/init.xlog.rc:root/init.xlog.rc \
