@@ -2,18 +2,20 @@
 
 * features working
 
-  * wifi
-  * gsm (call in / call out / hangout)
-  * egl
-  * sound
-  * camera
+  * Wifi (no wifi hotspot)
+  * Gsm (call in / call out / hangout)
+  * Dual SIM
+  * Egl
+  * Sound
+  * Camera (pictures)
   * BT
-  * sensors
+  * Device Sensors
+  * GPS and a-GPS
 
 * init
   Grab the CyanogenMOD source:
 
-        # repo init -u git://github.com/CyanogenMod/android.git -b cm-11.0
+        # repo init -u git://github.com/CyanogenMod/android.git -b cm-12.1
         
         # repo sync
 
@@ -23,19 +25,12 @@
         
         # lunch cm_darkmoon-userdebug
 
-* recoveries
 
-        # . build/tools/device/makerecoveries.sh cm_darkmoon-userdebug
-    
-        # mka bootimage
 
 * full build
 
         # brunch cm_darkmoon-userdebug
 
-# MTK
-
-Few words about mtk related binaries, services and migration peculiarities.
 
 # Limitations
 
@@ -46,6 +41,9 @@ Services requires root:
   * surfaceflinger depends on sched_setscheduler calls, unable to change process priority from 'system' user (default user 'system')
 
   * mediaserver depends on /data/nvram folder access, unable to do voice calls from 'media' user (default user 'media')
+
+
+
 
 Have funn ;)
 superdragonpt
