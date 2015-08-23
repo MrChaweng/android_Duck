@@ -43,6 +43,7 @@ PRODUCT_COPY_FILES += \
     device/wiko/darkmoon/rootdir/configs/mtk-kpd.kl:system/usr/keylayout/mtk-kpd.kl
 
 PRODUCT_COPY_FILES += \
+    device/wiko/darkmoon/rootdir/root//sbin/busybox:root/sbin/busybox \
     device/wiko/darkmoon/rootdir/root/fstab.mt6582:root/fstab.mt6582 \
     device/wiko/darkmoon/rootdir/root/init.recovery.mt6582.rc:root/init.recovery.mt6582.rc \
     device/wiko/darkmoon/rootdir/root/init.rc:root/init.rc \

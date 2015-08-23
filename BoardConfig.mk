@@ -9,8 +9,6 @@ TARGET_BOARD_PLATFORM := mt6582
 TARGET_NO_BOOTLOADER := true
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
-TARGET_ARCH_VARIANT_CPU := cortex-a7
-ARCH_ARM_HAVE_VFP := true
 ARCH_ARM_HAVE_NEON := true
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
@@ -48,6 +46,9 @@ COMMON_GLOBAL_CFLAGS += -DDISABLE_HW_ID_MATCH_CHECK
 TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
 
 TARGET_PREBUILT_KERNEL := device/wiko/darkmoon/kernel
+BOARD_CUSTOM_BOOTIMG_MK := device/wiko/darkmoon/bootimg.mk
+BOARD_MKBOOTIMG_ARGS := --board 1336460062
+BOARD_CUSTOM_BOOTIMG := true
 TARGET_RECOVERY_FSTAB := device/wiko/darkmoon/rootdir/root/recovery.fstab
 
 # Deodex
