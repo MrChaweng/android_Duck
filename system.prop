@@ -1,5 +1,5 @@
 #
-# system.prop for darkmoon
+# system.prop for Duck
 #
 service.adb.root=1
 ro.sf.lcd_density=240
