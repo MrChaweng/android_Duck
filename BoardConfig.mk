@@ -1,8 +1,8 @@
 # inherit from the proprietary version
--include vendor/wiko/darkmoon/BoardConfigVendor.mk
+-include vendor/lava/iris708/BoardConfigVendor.mk
 
 # GPS
-TARGET_SPECIFIC_HEADER_PATH := device/wiko/darkmoon/include
+TARGET_SPECIFIC_HEADER_PATH := device/lava/iris708/include
 
 # Board
 TARGET_BOARD_PLATFORM := mt6582
@@ -14,7 +14,7 @@ TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_SMP := true
 TARGET_CPU_VARIANT := cortex-a7
-DEVICE_RESOLUTION := 720x1280
+DEVICE_RESOLUTION := 540x960
 BOARD_HAS_NO_SELECT_BUTTON := true
 
 TARGET_BOOTLOADER_BOARD_NAME := mt6582
@@ -45,11 +45,11 @@ TARGET_KMODULES := true
 COMMON_GLOBAL_CFLAGS += -DDISABLE_HW_ID_MATCH_CHECK
 TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
 
-TARGET_PREBUILT_KERNEL := device/wiko/darkmoon/kernel
-BOARD_CUSTOM_BOOTIMG_MK := device/wiko/darkmoon/bootimg.mk
+TARGET_PREBUILT_KERNEL := device/lava/iris708/kernel
+BOARD_CUSTOM_BOOTIMG_MK := device/lava/iris708/bootimg.mk
 BOARD_MKBOOTIMG_ARGS := --board 1336460062
 BOARD_CUSTOM_BOOTIMG := true
-TARGET_RECOVERY_FSTAB := device/wiko/darkmoon/rootdir/root/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/lava/iris708/rootdir/root/recovery.fstab
 
 # Deodex
 WITH_DEXPREOPT := false
@@ -62,13 +62,13 @@ BOARD_BLUETOOTH_DOES_NOT_USE_RFKILL := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/wiko/darkmoon/bluetooth
 
 # EGL settings
-BOARD_EGL_CFG := device/wiko/darkmoon/rootdir/configs/egl.cfg
+BOARD_EGL_CFG := device/lava/iris708/rootdir/configs/egl.cfg
 USE_OPENGL_RENDERER := true
 BOARD_EGL_WORKAROUND_BUG_10194508 := true
 
 # SELINUX
 BOARD_SEPOLICY_DIRS := \
-       device/wiko/darkmoon/sepolicy
+       device/lava/iris708/sepolicy
 
 BOARD_SEPOLICY_UNION := \
        device.te \
@@ -86,7 +86,7 @@ COMMON_GLOBAL_CFLAGS += -DMTK_HARDWARE -DADD_LEGACY_ACQUIRE_BUFFER_SYMBOL
 COMMON_GLOBAL_CPPFLAGS += -DMTK_HARDWARE
 
 # RIL
-BOARD_RIL_CLASS := ../../../device/wiko/darkmoon/ril/
+BOARD_RIL_CLASS := ../../../device/lava/iris708/ril/
 
 BOARD_CONNECTIVITY_VENDOR := MediaTek
 BOARD_CONNECTIVITY_MODULE := conn_soc
