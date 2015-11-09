@@ -1,4 +1,4 @@
-# Build
+# Build from DarkMoon
 
 * features working
 
@@ -23,13 +23,13 @@
         
         # source build/envsetup.sh
         
-        # lunch cm_darkmoon-userdebug
+        # lunch cm_duck-userdebug
 
 
 
 * full build
 
-        # brunch cm_darkmoon-userdebug
+        # brunch cm_duck-userdebug
 
 
 # Limitations
