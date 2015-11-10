@@ -8,7 +8,7 @@ PRODUCT_RELEASE_NAME := Duck
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/lava/iris708/device_darkmoon.mk)
+$(call inherit-product, device/lava/iris708/device_duck.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 960
