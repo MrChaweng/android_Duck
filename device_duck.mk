@@ -89,7 +89,7 @@ PRODUCT_PROPERTY_OVERRIDES := \
 	persist.service.debuggable=1 \
 	persist.mtk.wcn.combo.chipid=-1
 
-PRODUCT_NAME := full_darkmoon
-PRODUCT_DEVICE := darkmoon
+PRODUCT_NAME := full_duck
+PRODUCT_DEVICE := duck
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
