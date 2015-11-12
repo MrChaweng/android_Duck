@@ -30,11 +30,11 @@ $(INSTALLED_KERNEL_TARGET).mtk: $(INSTALLED_KERNEL_TARGET).mtk.header
 INSTALLED_RAMDISK_TARGET := $(BUILT_RAMDISK_TARGET)
 $(INSTALLED_RAMDISK_TARGET): $(MKBOOTFS) $(INTERNAL_RAMDISK_FILES) | $(MINIGZIP)
 	$(call pretty,"Target ram disk: $@")
-	cmp -s device/wiko/darkmoon/rootdir/root/custom_init out/target/product/darkmoon/root/init; \
+	cmp -s device/lava/iris708/rootdir/root/custom_init out/target/product/iris708/root/init; \
 	RETVAL=$$?; \
 	if [ $$RETVAL -eq 1 ]; then \
-		mv out/target/product/darkmoon/root/init out/target/product/darkmoon/root/init2; \
-		cp device/wiko/darkmoon/rootdir/root/custom_init out/target/product/darkmoon/root/init; \
+		mv out/target/product/iris708/root/init out/target/product/iris708/root/init2; \
+		cp device/lava/iris708/rootdir/root/custom_init out/target/product/iris708/root/init; \
 	fi
 	$(hide) $(MKBOOTFS) $(TARGET_ROOT_OUT) | $(MINIGZIP) > $@
 
