@@ -2,13 +2,13 @@
 $(call inherit-product, vendor/cm/config/gsm.mk)
 
 # Release name
-PRODUCT_RELEASE_NAME := Duck
+PRODUCT_RELEASE_NAME := iris708
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/lava/iris708/device_duck.mk)
+$(call inherit-product, device/lava/iris708/device_iris708.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 960
