@@ -1,5 +1,5 @@
 #
-# system.prop for Duck
+# system.prop for iris708
 #
 service.adb.root=1
 ro.sf.lcd_density=240
