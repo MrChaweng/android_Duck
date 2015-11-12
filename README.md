@@ -1,4 +1,4 @@
-# Build from DarkMoon
+# Build from DarkMoon (Thank for superdragonpt)
 
 * features working
 
@@ -23,13 +23,13 @@
         
         # source build/envsetup.sh
         
-        # lunch cm_duck-userdebug
+        # lunch cm_iris708-userdebug
 
 
 
 * full build
 
-        # brunch cm_duck-userdebug
+        # brunch cm_iris708-userdebug
 
 
 # Limitations
@@ -46,4 +46,4 @@ Services requires root:
 
 
 Have funn ;)
-superdragonpt
+Thank for superdragonpt
