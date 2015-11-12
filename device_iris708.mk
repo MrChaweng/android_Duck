@@ -3,7 +3,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # The gps config appropriate for this device
 # $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
-$(call inherit-product-if-exists, vendor/lava/iris708/Duck-vendor.mk)
+$(call inherit-product-if-exists, vendor/lava/iris708/iris708-vendor.mk)
 
 PRODUCT_CHARACTERISTICS := nosdcard
 
@@ -76,7 +76,7 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, build/target/product/full.mk)
 
 PRODUCT_PROPERTY_OVERRIDES := \
-	ro.mediatek.version.release=ALPS.W10.24.p0 \
+	ro.mediatek.version.release=ALPS.KK1.MP1.V2.12 \
 	ro.mediatek.platform=MT6582 \
 	ro.mediatek.chip_ver=S01 \
 	ro.mediatek.version.branch=KK1.MP1 \
@@ -89,7 +89,7 @@ PRODUCT_PROPERTY_OVERRIDES := \
 	persist.service.debuggable=1 \
 	persist.mtk.wcn.combo.chipid=-1
 
-PRODUCT_NAME := full_duck
-PRODUCT_DEVICE := duck
+PRODUCT_NAME := full_iris708
+PRODUCT_DEVICE := iris708
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
